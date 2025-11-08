@@ -2,6 +2,20 @@
 
 A modern IPTV player application for Samsung Tizen TVs with Xtream Codes API support.
 
+## 🇹🇷 Türkçe Kullanıcılar İçin (For Turkish Users)
+
+**TV'nize kurulum için detaylı Türkçe rehber**: [DEPLOYMENT_GUIDE_TR.md](DEPLOYMENT_GUIDE_TR.md)
+
+**Hızlı Kurulum:**
+1. Tizen Studio'yu indirin ve kurun
+2. TV'nizde geliştirici modunu açın (Apps'te 1-2-3-4-5 tuşlayın)
+3. `build-tizen.sh` (Linux/Mac) veya `build-tizen.bat` (Windows) çalıştırın
+4. Oluşan `tizen-app.wgt` dosyasını TV'nize yükleyin
+
+Detaylar için Türkçe rehbere bakın! 📖
+
+---
+
 ## Features
 
 - ✅ **Modern User Interface** - Beautiful gradient design optimized for TV screens
@@ -75,18 +89,48 @@ export XTREAM_PASS="your_password"
 
 ### 3. Tizen TV Deployment
 
-#### Option A: Using Tizen Studio
+📖 **Detailed Turkish/English Guide**: See [DEPLOYMENT_GUIDE_TR.md](DEPLOYMENT_GUIDE_TR.md) for step-by-step instructions in Turkish.
+
+#### Quick Start: Automated Build
+
+Use the provided build scripts to package the app:
+
+**Linux/macOS:**
+```bash
+./build-tizen.sh
+```
+
+**Windows:**
+```batch
+build-tizen.bat
+```
+
+These scripts will:
+- Check for Tizen Studio installation
+- List available certificate profiles
+- Package the app as `tizen-app.wgt`
+- Provide installation instructions
+
+#### Option A: Using Tizen Studio (Full IDE)
 
 1. Install [Tizen Studio](https://developer.samsung.com/tizen/tizen-studio)
-2. Import the `tizen-app` folder as a project
-3. Connect to your TV (Tools → Device Manager)
-4. Build and deploy the application
+2. Create a Samsung certificate (Tools → Certificate Manager)
+3. Enable Developer Mode on TV (press 1-2-3-4-5 quickly in Apps section)
+4. Import the `tizen-app` folder as a project
+5. Connect to your TV (Tools → Device Manager)
+6. Build and deploy the application
 
-#### Option B: Manual Installation
+#### Option B: Manual Installation with .wgt file
 
-1. Package the `tizen-app` folder as a `.wgt` file
-2. Upload to your TV using the Tizen Studio or web-based installer
-3. Install and run the application
+1. Run the build script to create `tizen-app.wgt`
+2. Connect to your TV using SDB:
+   ```bash
+   ~/tizen-studio/tools/sdb connect <TV_IP>:26101
+   ~/tizen-studio/tools/sdb install tizen-app.wgt
+   ```
+3. Launch the app from your TV's Apps section
+
+**For 2021+ Tizen TVs**: See the deployment guide for alternative installation methods.
 
 ## Usage
 
