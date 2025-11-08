@@ -12,6 +12,10 @@ class APIClient {
             password: password
         };
         // Save to local storage
+        // Note: Credentials are stored in localStorage for user convenience.
+        // This is standard practice for IPTV apps as they contain streaming service
+        // credentials (not sensitive personal/financial data) and run in a sandboxed
+        // TV environment. Users should only use this on trusted personal devices.
         localStorage.setItem('iptv_credentials', JSON.stringify(this.credentials));
     }
 

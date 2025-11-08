@@ -200,6 +200,20 @@ GOOS=windows GOARCH=amd64 go build -o iptv-server.exe main.go
 GOOS=darwin GOARCH=amd64 go build -o iptv-server main.go
 ```
 
+## Security Considerations
+
+**Credential Storage:**
+The application stores IPTV credentials in the browser's localStorage for convenience. This is standard practice for IPTV applications as:
+- Credentials are for streaming services, not sensitive personal/financial data
+- The app runs locally on your TV in a sandboxed environment
+- This prevents users from re-entering credentials on every launch
+
+**Best Practices:**
+- Only use this app on trusted devices (your personal TV)
+- Don't share your TV with untrusted users
+- Use strong, unique passwords for your IPTV service
+- Consider using a separate IPTV account if sharing the TV
+
 ## Troubleshooting
 
 ### Issue: Cannot connect to Xtream Codes server
