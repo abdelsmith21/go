@@ -4,15 +4,18 @@ A modern IPTV player application for Samsung Tizen TVs with Xtream Codes API sup
 
 ## 🇹🇷 Türkçe Kullanıcılar İçin (For Turkish Users)
 
-**TV'nize kurulum için detaylı Türkçe rehber**: [DEPLOYMENT_GUIDE_TR.md](DEPLOYMENT_GUIDE_TR.md)
+**🚀 Nasıl build edip TV'ye kuracağım?** → [QUICK_START_TR.md](QUICK_START_TR.md) - En basit adım adım rehber!
 
-**Hızlı Kurulum:**
-1. Tizen Studio'yu indirin ve kurun
-2. TV'nizde geliştirici modunu açın (Apps'te 1-2-3-4-5 tuşlayın)
-3. `build-tizen.sh` (Linux/Mac) veya `build-tizen.bat` (Windows) çalıştırın
-4. Oluşan `tizen-app.wgt` dosyasını TV'nize yükleyin
+**📖 Detaylı kurulum rehberi:** [DEPLOYMENT_GUIDE_TR.md](DEPLOYMENT_GUIDE_TR.md)
 
-Detaylar için Türkçe rehbere bakın! 📖
+**Hızlı Özet:**
+1. Tizen Studio indirin ve kurun
+2. TV'de geliştirici modu açın (Apps'te 1-2-3-4-5 tuşlayın)
+3. `build-tizen.bat` (Windows) veya `./build-tizen.sh` (Linux/Mac) çalıştırın
+4. Oluşan `tizen-app.wgt` dosyasını TV'ye yükleyin
+5. `main.go`'yu düzenleyip backend'i başlatın: `go run main.go`
+
+Adım adım tüm detaylar için yukarıdaki rehberlere bakın! 📖
 
 ---
 
