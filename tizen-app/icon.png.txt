@@ -1,0 +1,2 @@
+This is a placeholder for the application icon (icon.png).
+For a real deployment, replace this with an actual PNG image file (recommended size: 512x512 pixels).
